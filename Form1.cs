@@ -6,5 +6,11 @@ namespace practice_group
         {
             InitializeComponent();
         }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            string nameUser = txtName.Text;
+            MessageBox.Show($"Hello {nameUser}");
+        }
     }
 }
