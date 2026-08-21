@@ -14,5 +14,18 @@ namespace practice_group
         {
             InitializeComponent();
         }
+
+        private void btnVerify_Click(object sender, EventArgs e)
+        {
+            if (txtUsername.Text == null)
+            {
+                MessageBox.Show("Username field is empty");
+            }
+
+            if (txtPassword.Text == null)
+            {
+                MessageBox.Show("Password field is empty");
+            }
+        }
     }
 }

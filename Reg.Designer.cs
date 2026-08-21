@@ -28,12 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Reg";
+            txtUsername = new TextBox();
+            txtPassword = new TextBox();
+            btnVerify = new Button();
+            SuspendLayout();
+            // 
+            // txtUsername
+            // 
+            txtUsername.Location = new Point(313, 102);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(195, 27);
+            txtUsername.TabIndex = 0;
+            // 
+            // txtPassword
+            // 
+            txtPassword.Location = new Point(313, 163);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(195, 27);
+            txtPassword.TabIndex = 1;
+            // 
+            // btnVerify
+            // 
+            btnVerify.Location = new Point(359, 233);
+            btnVerify.Name = "btnVerify";
+            btnVerify.Size = new Size(94, 29);
+            btnVerify.TabIndex = 2;
+            btnVerify.Text = "Verify";
+            btnVerify.UseVisualStyleBackColor = true;
+            btnVerify.Click += btnVerify_Click;
+            // 
+            // Reg
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnVerify);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUsername);
+            Name = "Reg";
+            Text = "Reg";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox txtUsername;
+        private TextBox txtPassword;
+        private Button btnVerify;
     }
 }
